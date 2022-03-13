@@ -6,7 +6,7 @@
 
 plugins {
     // Apply the Kotlin JVM plugin to add support for Kotlin on the JVM.
-    id("org.jetbrains.kotlin.jvm").version("1.3.21")
+    id("org.jetbrains.kotlin.jvm").version("1.4.32")
 }
 
 repositories {
@@ -17,11 +17,15 @@ repositories {
 
 dependencies {
     // Here's where the X509 Certificate Lookup SPI is defined
-    implementation("org.keycloak:keycloak-services:8.0.1")
+    implementation("org.keycloak:keycloak-services:17.0.0")
 
     // And this is needed by all SPIs
-    implementation("org.keycloak:keycloak-server-spi:8.0.1")
+    implementation("org.keycloak:keycloak-server-spi:17.0.0")
 
     // Use the Kotlin JDK 8 standard library.
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+}
+
+tasks.wrapper {
+    gradleVersion = "5.6.4"
 }
