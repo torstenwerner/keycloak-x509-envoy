@@ -21,7 +21,7 @@ dependencies {
     implementation("org.keycloak:keycloak-server-spi:17.0.0")
 
     // Use the Kotlin JDK 8 standard library.
-    implementation("org.jetbrains.kotlin:kotlin-stdlib")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 }
 
 tasks.wrapper {
