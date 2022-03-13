@@ -6,7 +6,7 @@
 
 plugins {
     // Apply the Kotlin JVM plugin to add support for Kotlin on the JVM.
-    id("org.jetbrains.kotlin.jvm").version("1.4.32")
+    id("org.jetbrains.kotlin.jvm").version("1.5.32")
 }
 
 repositories {
@@ -27,5 +27,5 @@ dependencies {
 }
 
 tasks.wrapper {
-    gradleVersion = "5.6.4"
+    gradleVersion = "6.9.1"
 }
